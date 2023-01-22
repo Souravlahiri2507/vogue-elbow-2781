@@ -16,11 +16,11 @@ import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { BiStoreAlt } from "react-icons/bi";
 
 const handleLogin = () =>{
-    alert("Login Button Clicked")
+   window.location.assign("/login")
 }
 
 const NavUpperMenu = () => {
-  return (
+  return (   
     <Box position="fixed" zIndex="1" w="full">
       <Box bgColor="whitesmoke" p="15px">
         <Flex justifyContent="space-around">

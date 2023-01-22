@@ -10,6 +10,7 @@ import {
   Button,
   Container,
 } from "@chakra-ui/react";
+import Footer from "./Footer";
 
 const Dashboard = () => {
   return (
@@ -130,9 +131,23 @@ const Dashboard = () => {
             <hr style={{ border: "1px solid black" }} />
             <Box>
               <Container maxW="6xl">
-              <Text>
-              From luggage sets to crossbody bags and fine jewelry, you’ll find what you’re shopping for (and so much more!) on belk.com. Shop designer handbags from many brands including Brahmin and Michael Kors, skincare and makeup from your favorites like Estée Lauder and Clinique or men’s suits and sport coats from stylish brands like Tommy Hilfiger. Get chic in a variety of shoes for women, get active in Nike® or get outdoors in Columbia and Sperry®. Update your home with bedspreads, comforter sets and new cookware. Create picture-perfect looks with our large selection of kids’ and baby clothes. Treat yourself to something new with our wide variety of purses, jewelry and accessories. If you’re searching for luxury gifts, shop our selection of designer watches and Le Vian® jewelry. No matter your style or your lifestyle, you’ll find something you love at Belk. Happy shopping!
-              </Text>
+                <Text>
+                  From luggage sets to crossbody bags and fine jewelry, you’ll
+                  find what you’re shopping for (and so much more!) on belk.com.
+                  Shop designer handbags from many brands including Brahmin and
+                  Michael Kors, skincare and makeup from your favorites like
+                  Estée Lauder and Clinique or men’s suits and sport coats from
+                  stylish brands like Tommy Hilfiger. Get chic in a variety of
+                  shoes for women, get active in Nike® or get outdoors in
+                  Columbia and Sperry®. Update your home with bedspreads,
+                  comforter sets and new cookware. Create picture-perfect looks
+                  with our large selection of kids’ and baby clothes. Treat
+                  yourself to something new with our wide variety of purses,
+                  jewelry and accessories. If you’re searching for luxury gifts,
+                  shop our selection of designer watches and Le Vian® jewelry.
+                  No matter your style or your lifestyle, you’ll find something
+                  you love at Belk. Happy shopping!
+                </Text>
               </Container>
             </Box>
             <Box>
@@ -287,7 +302,8 @@ const Dashboard = () => {
             </Box>
 
             {/* Footer */}
-            <hr style={{ border: "1px solid black" }} />
+            <Footer />
+
           </Flex>
         </Box>
       </Center>

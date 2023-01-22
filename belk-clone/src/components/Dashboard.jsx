@@ -11,10 +11,13 @@ import {
   Container,
 } from "@chakra-ui/react";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
+
 
 const Dashboard = () => {
   return (
     <>
+    <Navbar/>
       {/* // Dashboard */}
       <Center>
         <Box position="absolute" top="150px">

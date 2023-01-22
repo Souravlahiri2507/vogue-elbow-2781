@@ -15,6 +15,10 @@ import { BsBag } from "react-icons/bs";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { BiStoreAlt } from "react-icons/bi";
 
+const handleLogin = () =>{
+    alert("Login Button Clicked")
+}
+
 const NavUpperMenu = () => {
   return (
     <Box position="fixed" zIndex="1" w="full">
@@ -50,9 +54,15 @@ const NavUpperMenu = () => {
                 </ListItem>
                 <ListItem>
                   <MdOutlineAccountCircle />
-                  <Button colorScheme="black" variant="link">
-                    My Account
-                  </Button>
+                  <Menu>
+                    <MenuButton as={Button} bgColor="whitesmoke">
+                      My Account
+                    </MenuButton>
+                    <MenuList>
+                      <MenuItem onClick={handleLogin}>Login</MenuItem>
+                      <MenuItem>Sign-Up</MenuItem>
+                    </MenuList>
+                  </Menu>
                 </ListItem>
                 <ListItem>
                   <BsBag />
